@@ -20,7 +20,7 @@ Meantime, we have implemented various statistical arbitrage model including
 
 + **intraday volatile mean reversion strategy** on *RB1810*
 
-1. ***Backtesting***
+1. Backtesting
 
 Trading results from 05/2017 to 07/2017 on *RB1805*
 
@@ -28,7 +28,7 @@ Trading results from 05/2017 to 07/2017 on *RB1805*
 
 see `backtesting_strategyIntraVolMeanRev.ipynb` for more details
 
-2. ***Minic Panel***
+2. Minic Panel
 
 Minic trading results on 05/06/2018 on *RB1810*
 
@@ -37,7 +37,7 @@ Minic trading results on 05/06/2018 on *RB1810*
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Strategy/MinicPanel_0605_1.png" height="330">
 </div>
 
-+ Hidden Markov Model arbitrage on *CSI300*
++ **Hidden Markov Model arbitrage** on *CSI300*
 
 First, we illustrate the basic conception of HMM and write the augmented expected log-likelihood as 
 
@@ -51,7 +51,7 @@ A example for the probabilistic parameters of a hidden Markov model is presented
 
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/Prob.png" height="330">
 
-+ Cross-star Arbitrage on dominant futures *Pb*
++ **Cross-star Arbitrage** on dominant futures *Pb*
 
 1. Pb Futures Duration
 
