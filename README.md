@@ -38,6 +38,7 @@ Minic trading results on 05/06/2018 on *RB1810*
 </div>
 
 + Hidden Markov Model arbitrage on *CSI300*
+
 First, we illustrate the basic conception of HMM and write the augmented expected log-likelihood as 
 
 <img src="https://latex.codecogs.com/gif.latex?\begin{aligned}&space;Q(\theta,\theta^*)&=\sum_Z&space;\log&space;f&space;(X,Z|\theta)f(Z|X,\theta^*)\\&space;&=\sum_Z&space;\log[f(Z|\theta)P(X|Z,\theta)]f(Z|X,\theta^*)\\&space;&=\sum_Z&space;\log[f(z_1|\theta)\prod_{n=2}^Nf(z_n|z_{n-1},\theta)\prod_{n=1}^Nf(x_n|z_n,\theta)]f(Z|X,\theta^*)&space;\end{aligned}" title="\begin{aligned} Q(\theta,\theta^*)&=\sum_Z \log f (X,Z|\theta)f(Z|X,\theta^*)\\ &=\sum_Z \log[f(Z|\theta)P(X|Z,\theta)]f(Z|X,\theta^*)\\ &=\sum_Z \log[f(z_1|\theta)\prod_{n=2}^Nf(z_n|z_{n-1},\theta)\prod_{n=1}^Nf(x_n|z_n,\theta)]f(Z|X,\theta^*) \end{aligned}" /></a>
