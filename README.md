@@ -63,8 +63,24 @@ Factor2 = np.log(np.array(data['High'][5:])) - np.log(np.array(data['High'][5:])
 ```
 3. Computing each 5 days logged volume spread
 ```Python
-logVol_5 = np.log(np.array(data['Volume'][5:])) - np.log(np.array(data['Volume'][5:]))
+Factor3 = np.log(np.array(data['Volume'][5:])) - np.log(np.array(data['Volume'][5:]))
 ```
+
+After that, we begin our assessment as follow `code`
+
+```Python
+Factors = np.column_stack([Factor1,Factor2,Factor3])
+model = GaussianHMM(n_components= n, covariance_type="full", n_iter=2000).fit(Factors)
+hidden_states = model.predict(A)
+plt.figure(figsize=(30, 18)) 
+for i in range(model.n_components):
+    pos = (hidden_states==i)
+    plt.plot_date(Date[pos],close[pos],'o',label='hidden state %d'%i,lw=2)
+    plt.legend(loc="upper left",
+              fontsize=30)
+```
+
+---
 + **Cross-star Arbitrage** on dominant futures *Pb*
 
 1. Pb Futures Duration
