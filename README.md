@@ -1,6 +1,5 @@
 # Quantative-Trading-Models
 
-## Introduction 
 These are serveral trading results and arbitrage models from Southern China Center for Statistical Science (SC2S2), Sun Yat-sen University
 
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/logo.png" height="200">
