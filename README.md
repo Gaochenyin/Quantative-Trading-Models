@@ -6,8 +6,6 @@ These are serveral trading results and arbitrage models from Southern China Cent
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/logo.png" height="200">
 
 ## Research Details
-We demonstrate some Strategies results and Statistical models in this section.
-
 We have completed designed the algorithm of **intraday volatile mean reversion strategy** and run it on *RB1810* object from Oct,2017 to Jul,2018 through on Python [vnpy](https://github.com/vnpy/vnpy). 
 
 See `strategyIntraVolMeanRev.py` for more details trading algorithm.
