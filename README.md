@@ -6,11 +6,11 @@ These are serveral trading results and arbitrage models from Southern China Cent
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/logo.png" height="200">
 
 ## Research Details
-We have completed designed the algorithm of **intraday volatile mean reversion strategy** and run it on *RB1810* object from Oct,2017 to Jul,2018 through on Python [vnpy](https://github.com/vnpy/vnpy). 
+We have completed designed the algorithm of **intraday volatile mean reversion strategy** and run it on *RB1805*,*RB1810* object on [vnpy](https://github.com/vnpy/vnpy). 
 
 See `strategyIntraVolMeanRev.py` for more details trading algorithm.
 
-Meantime, we have studied various statistical arbitrage model including
+Meantime, we have implemented various statistical arbitrage model including
 
 1. Cross-star Arbitrage
 2. Hidden Markov Model based on Fama-French Three Factors Decomposition
@@ -20,18 +20,21 @@ Meantime, we have studied various statistical arbitrage model including
 
 + **intraday volatile mean reversion strategy** on *RB1810*
 
-***Backtesting***
-Trading results from 05/2018 to 07/2018, see `backtesting_strategyIntraVolMeanRev.ipynb` for more details
+1. ***Backtesting***
 
+Trading results from 05/2017 to 07/2017 on *RB1805*
+<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Strategy/Partial%20Results.png" height="600" align=center>
 
-***Minic Panel***
+see `backtesting_strategyIntraVolMeanRev.ipynb` for more details
+
+2. ***Minic Panel***
 <div align="center">
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Strategy/MinicPanel_0605_0.png" height="330">
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Strategy/MinicPanel_0605_1.png" height="330">
 </div>
 
 + Cross-star Arbitrage on dominant futures *Pb*
-Table 2: Pb Futures
+Pb Futures Duration
 start end symbol
 2017/10/19 2017/10/23 PB1711
 2017/10/24 2017/11/16 PB1712
