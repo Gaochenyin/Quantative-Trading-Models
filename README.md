@@ -2,25 +2,57 @@
 
 ## Introduction 
 These are serveral trading results and arbitrage models from Southern China Center for Statistical Science (SC2S2), Sun Yat-sen University
-![logo]()
 
-## Details
+<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/logo.png" height="200">
 
-### Strategies
-We have completed designed the algorithm of **intraday volatile mean reversion strategy**, see `strategyIntraVolMeanRev.py` and run it on *rb1810* object from Oct,2017 to Jul,2018 through on Python [vnpy](https://github.com/vnpy/vnpy). 
+## Research Details
+We demonstrate some Strategies results and Statistical models in this section.
 
-<div align="center">
-<img src="http://pp.myapp.com/ma_pic2/0/shot_42391053_1_1488499316/550" height="330" width="190" >
+We have completed designed the algorithm of **intraday volatile mean reversion strategy** and run it on *RB1810* object from Oct,2017 to Jul,2018 through on Python [vnpy](https://github.com/vnpy/vnpy). 
 
-<img src="http://pp.myapp.com/ma_pic2/0/shot_42391053_2_1488499316/550" height="330" width="190" >
+See `strategyIntraVolMeanRev.py` for more details trading algorithm.
 
-<img src="http://pp.myapp.com/ma_pic2/0/shot_42391053_3_1488499316/550" height="330" width="190" >
-
-</div>
-
-### Models
 Meantime, we have studied various statistical arbitrage model including
 
-1. Fama-French Three Factors Model
-2. Hidden Markov Model based on Factors Decomposition
-3. 协整性套利
+1. Cross-star Arbitrage
+2. Hidden Markov Model based on Fama-French Three Factors Decomposition
+3. Paired Cointegrative Arbitrage
+
+## Results
+
++ **intraday volatile mean reversion strategy** on *RB1810*
+
+***Backtesting***
+Trading results from 05/2018 to 07/2018, see `backtesting_strategyIntraVolMeanRev.ipynb` for more details
+
+
+***Minic Panel***
+<div align="center">
+<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Strategy/MinicPanel_0605_0.png" height="330">
+<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Strategy/MinicPanel_0605_1.png" height="330">
+</div>
+
++ Cross-star Arbitrage on dominant futures *Pb*
+Table 2: Pb Futures
+start end symbol
+2017/10/19 2017/10/23 PB1711
+2017/10/24 2017/11/16 PB1712
+2017/11/17 2017/12/19 PB1801
+2017/12/20 2018/1/17 PB1802
+2018/1/18 2018/2/14 PB1803
+2018/2/22 2018/3/14 PB1804
+2018/3/15 2018/4/17 PB1805
+2018/4/18 2018/5/23 PB1806
+2018/5/24 2018/6/26 PB1807
+2018/6/27 2018/7/23 PB1808
+2018/7/24 2018/8/20 PB1809
+2018/8/21 2018/9/19 PB1810
+2018/9/20 2018/10/19 PB1811
+## Set up
++ [***vnpy***](https://github.com/vnpy/vnpy)(vnpy-1.8)
++ ***numpy*** 
++ ***pandas*** 
++ ***matplotlib***
+
+## Contact
++ gaochy5@mail2.sysu.edu.cn
