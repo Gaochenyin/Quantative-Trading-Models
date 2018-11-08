@@ -50,19 +50,19 @@ A example for the probabilistic parameters of a hidden Markov model is presented
 
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/Prob.png" height="330">
 
-Based on [RiceQuant](https://www.ricequant.com/profile/352568), we obtain daliy open,high,low,close price of *CSI300* (`data`) from 01/01/2005 to 31/12/2015 and denoted three potential state factors as,
+Based on [RiceQuant](https://www.ricequant.com/profile/352568), we obtain daliy open,high,low,close and volume of *CSI300* (`data`) from 01/01/2005 to 31/12/2015 and denoted three potential state factors as,
 
-1. Computing logged daliy spread High-计算每日最高最低价格的对数差值
+1. Computing logged daliy spread
 ```Python
 Factor1 = np.log(np.array(data['High'])) - np.log(np.array(data['Low']))
 ```
-2. 计算每5日的指数对数收益差
+2. Computing each 5 days logged return spread
 ```Python
-logRet_5 = np.log(np.array(close[5:])) - np.log(np.array(close[:-5]))
+Factor2 = np.log(np.array(data['High'][5:])) - np.log(np.array(data['High'][5:]))
 ```
-3. 计算每5日的指数成交量的对数差
+3. Computing each 5 days logged volume spread
 ```Python
-logVol_5 = np.log(np.array(volume[5:])) - np.log(np.array(volume[:-5]))
+logVol_5 = np.log(np.array(data['Volume'][5:])) - np.log(np.array(data['Volume'][5:]))
 ```
 + **Cross-star Arbitrage** on dominant futures *Pb*
 
