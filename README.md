@@ -6,25 +6,28 @@ These are serveral trading results and arbitrage models from Southern China Cent
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/logo.png" height="200">
 
 ## Research Details
-We demonstrate some Strategies results and Statistical models in this section
+We demonstrate some Strategies results and Statistical models in this section.
 
-### Strategies
-We have completed designed the algorithm of **intraday volatile mean reversion strategy**, see `strategyIntraVolMeanRev.py` and run it on *rb1810* object from Oct,2017 to Jul,2018 through on Python [vnpy](https://github.com/vnpy/vnpy). 
+We have completed designed the algorithm of **intraday volatile mean reversion strategy** and run it on *RB1810* object from Oct,2017 to Jul,2018 through on Python [vnpy](https://github.com/vnpy/vnpy). 
 
-<div align="center">
-<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Strategy/MinicPanel_0605_0.png" height="330">
-<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Strategy/MinicPanel_0605_1.png" height="330">
-</div>
+See `strategyIntraVolMeanRev.py` for more details trading algorithm.
 
-### Models
 Meantime, we have studied various statistical arbitrage model including
 
 1. Fama-French Three Factors Model
 2. Hidden Markov Model based on Factors Decomposition
 3. 协整性套利
 
+## Results
+
++ **intraday volatile mean reversion strategy** on *RB1810*
+
+<div align="center">
+<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Strategy/MinicPanel_0605_0.png" height="330",'minicPanel'>
+<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Strategy/MinicPanel_0605_1.png" height="330">
+</div>
 ## Set up
-+ [***vnpy(vnpy-1.8)***](https://github.com/vnpy/vnpy)
++ [***vnpy***](https://github.com/vnpy/vnpy)(vnpy-1.8)
 + ***numpy*** 
 + ***pandas*** 
 + ***matplotlib***
