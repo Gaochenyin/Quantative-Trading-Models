@@ -1,6 +1,5 @@
 # Quantative-Trading-Models
 
-## Introduction 
 These are serveral trading results and arbitrage models from Southern China Center for Statistical Science (SC2S2), Sun Yat-sen University
 
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/logo.png" height="200">
@@ -12,15 +11,15 @@ See `strategyIntraVolMeanRev.py` for more details trading algorithm.
 
 Meantime, we have implemented various statistical arbitrage model including
 
-1. Cross-star Arbitrage
-2. Hidden Markov Model based on Fama-French Three Factors Decomposition
-3. Paired Cointegrative Arbitrage
+1. **Cross-star Arbitrage**
+2. **Hidden Markov Model** based on Factors Decomposition
+3. **Paired Cointegrative Arbitrage**
 
 ## Results
 
 + **intraday volatile mean reversion strategy** on *RB1810*
 
-1. ***Backtesting***
+1. Backtesting
 
 Trading results from 05/2017 to 07/2017 on *RB1805*
 
@@ -28,7 +27,7 @@ Trading results from 05/2017 to 07/2017 on *RB1805*
 
 see `backtesting_strategyIntraVolMeanRev.ipynb` for more details
 
-2. ***Minic Panel***
+2. Minic Panel
 
 Minic trading results on 05/06/2018 on *RB1810*
 
@@ -37,7 +36,41 @@ Minic trading results on 05/06/2018 on *RB1810*
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Strategy/MinicPanel_0605_1.png" height="330">
 </div>
 
-+ Cross-star Arbitrage on dominant futures *Pb*
+---
++ **Hidden Markov Model arbitrage** on *CSI300*
+
+First, we illustrate the basic conception of HMM and write the augmented expected log-likelihood as 
+
+<img src="https://latex.codecogs.com/gif.latex?\begin{aligned}&space;Q(\theta,\theta^*)&=\sum_Z&space;\log&space;f&space;(X,Z|\theta)f(Z|X,\theta^*)\\&space;&=\sum_Z&space;\log[f(Z|\theta)P(X|Z,\theta)]f(Z|X,\theta^*)\\&space;&=\sum_Z&space;\log[f(z_1|\theta)\prod_{n=2}^Nf(z_n|z_{n-1},\theta)\prod_{n=1}^Nf(x_n|z_n,\theta)]f(Z|X,\theta^*)&space;\end{aligned}" title="\begin{aligned} Q(\theta,\theta^*)&=\sum_Z \log f (X,Z|\theta)f(Z|X,\theta^*)\\ &=\sum_Z \log[f(Z|\theta)P(X|Z,\theta)]f(Z|X,\theta^*)\\ &=\sum_Z \log[f(z_1|\theta)\prod_{n=2}^Nf(z_n|z_{n-1},\theta)\prod_{n=1}^Nf(x_n|z_n,\theta)]f(Z|X,\theta^*) \end{aligned}" /></a>
+
+* <img src="https://latex.codecogs.com/gif.latex?f(z_1|\theta)" title="f(z_1|\theta)" /></a> is the prior state probabilities
+* <img src="https://latex.codecogs.com/gif.latex?f(z_n|z_{n-1})" title="f(z_n|z_{n-1})" /></a> is the state transition probabilities
+* <img src="https://latex.codecogs.com/gif.latex?f(x_n|z_n)" title="f(x_n|z_n)" /></a> is the output probabilities
+
+A example for the probabilistic parameters of a hidden Markov model is presented as below(Omit partial output probabilities for simplicity)
+
+<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/Prob.png" height="330">
+
+Based on [RiceQuant](https://www.ricequant.com/profile/352568), we obtain daliy open,high,low,close and volume of *CSI300* (`data`) from 01/01/2005 to 31/12/2015 and denoted three potential state factors as,
+
+1. Computing logged daliy spread
+```Python
+Factor1 = np.log(np.array(data['High'])) - np.log(np.array(data['Low']))
+```
+2. Computing each 5 days logged return spread
+```Python
+Factor2 = np.log(np.array(data['High'][5:])) - np.log(np.array(data['High'][5:]))
+```
+3. Computing each 5 days logged volume spread
+```Python
+Factor3 = np.log(np.array(data['Volume'][5:])) - np.log(np.array(data['Volume'][5:]))
+```
+
+After that, we begin our assessment in `HMM_arbitrage.py`
+
+
+---
++ **Cross-star Arbitrage** on dominant futures *Pb*
 
 1. Pb Futures Duration
 
@@ -63,6 +96,7 @@ Minic trading results on 05/06/2018 on *RB1810*
 
 ## Set up
 + [***vnpy***](https://github.com/vnpy/vnpy)(vnpy-1.8)
++ ***hmmlearn***
 + ***numpy*** 
 + ***pandas*** 
 + ***matplotlib***
