@@ -50,6 +50,8 @@ A example for the probabilistic parameters of a hidden Markov model is presented
 
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/Prob.png" height="330">
 
+Based on [RiceQuant](https://www.ricequant.com/profile/352568), we obtain daliy open,high,low,close price of *CSI300* from 01/01/2005 to 31/12/2015
+
 + **Cross-star Arbitrage** on dominant futures *Pb*
 
 1. Pb Futures Duration
