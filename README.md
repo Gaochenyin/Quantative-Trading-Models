@@ -35,7 +35,7 @@ Minic trading results on 05/06/2018 on *RB1810*
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Strategy/MinicPanel_0605_0.png" height="330">
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Strategy/MinicPanel_0605_1.png" height="330">
 </div>
-
+###
 + **Hidden Markov Model arbitrage** on *CSI300*
 
 First, we illustrate the basic conception of HMM and write the augmented expected log-likelihood as 
