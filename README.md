@@ -68,14 +68,13 @@ Factor3 = np.log(np.array(data['Volume'][5:])) - np.log(np.array(data['Volume'][
 
 After that, we begin our assessment in `HMM_arbitrage.py`
 
-<div>
-<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/HMM_Status.png" height="600" align=center>
-<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/Status_Judgement.png" height="600" align=center>
-<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/Return.png" height="600" align=center>
-<\div>
+<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/HMM_Status.png" height="330" align=center>
+<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/Status_Judgement.png" height="330" align=center>
+
 
 Finally, we demonstrate our trading return based on previous HMM prediction
 
+<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/Return.png" height="330" align=center>
 
 ---
 + **Cross-star Arbitrage** on dominant futures *Pb*
