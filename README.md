@@ -12,9 +12,9 @@ See `strategyIntraVolMeanRev.py` for more details trading algorithm.
 
 Meantime, we have implemented various statistical arbitrage model including
 
-1. Cross-star Arbitrage
-2. Hidden Markov Model based on Fama-French Three Factors Decomposition
-3. Paired Cointegrative Arbitrage
+1. **Cross-star Arbitrage**
+2. **Hidden Markov Model** based on Factors Decomposition
+3. **Paired Cointegrative Arbitrage**
 
 ## Results
 
