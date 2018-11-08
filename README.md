@@ -47,7 +47,7 @@ First, we illustrate the basic conception of HMM and write the augmented expecte
 * <img src="https://latex.codecogs.com/gif.latex?f(z_n|z_{n-1})" title="f(z_n|z_{n-1})" /></a> is the state transition probabilities
 * <img src="https://latex.codecogs.com/gif.latex?f(x_n|z_n)" title="f(x_n|z_n)" /></a> is the output probabilities
 
-A example for the probabilistic parameters of a hidden Markov model is presented as below
+A example for the probabilistic parameters of a hidden Markov model is presented as below(Omit partial output probabilities for simplicity)
 
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/Prob.png" height="330">
 
@@ -77,6 +77,7 @@ A example for the probabilistic parameters of a hidden Markov model is presented
 
 ## Set up
 + [***vnpy***](https://github.com/vnpy/vnpy)(vnpy-1.8)
++ ***hmmlearn***
 + ***numpy*** 
 + ***pandas*** 
 + ***matplotlib***
