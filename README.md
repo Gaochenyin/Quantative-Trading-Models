@@ -51,7 +51,7 @@ A example for the probabilistic parameters of a hidden Markov model is presented
 
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/Prob.png" height="330">
 
-Based on [RiceQuant](https://www.ricequant.com/profile/352568), we obtain daliy open,high,low,close and volume of *CSI300* (`data`) from 01/01/2005 to 31/12/2015 and denoted three potential state factors as,
+Based on [RiceQuant](https://www.ricequant.com/profile/352568), we obtain daliy open,high,low,close and volume of *CSI300* (`data`) from 01/01/2005 to 31/12/2015 and denoted three feature-factors as,
 
 1. Computing logged daliy spread
 ```Python
@@ -66,7 +66,7 @@ Factor2 = np.log(np.array(data['High'][5:])) - np.log(np.array(data['High'][5:])
 Factor3 = np.log(np.array(data['Volume'][5:])) - np.log(np.array(data['Volume'][5:]))
 ```
 
-After that, we begin our assessment in `HMM_arbitrage.py`
+After that, we preset six potential states of *CSI300* and begin our assessment in `HMM_arbitrage.py`
 
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/HMM_Status.png" height="330" align=center>
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/Status_Judgement.png" height="330" align=center>
