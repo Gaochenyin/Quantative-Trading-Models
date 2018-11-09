@@ -101,7 +101,7 @@ Finally, we demonstrate our trading return based on previous HMM prediction
 
 we run our Cross-Star strategy on *Pb* Dominant contract from 2018/05/05 to 2018/11/10. For more details in `Integrate_Pb.ipynb`
 
-<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/Cross_Star/Pb_Return.png" height="330">
+<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/Cross_Star/Pb/TradingResults/Pb_Return.png" height="330">
 
 ## Set up
 + [***vnpy***](https://github.com/vnpy/vnpy)(vnpy-1.8)
