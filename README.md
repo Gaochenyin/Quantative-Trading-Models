@@ -79,7 +79,7 @@ Finally, we demonstrate our trading return based on previous HMM prediction
 ---
 + **Cross-star Arbitrage** on dominant futures *Pb*
 
-1. Pb Futures Duration
+1. Pb Dominant Futures Duration
 
 |start |end |symbol|
 |--------|--------|--------|
