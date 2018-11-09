@@ -68,7 +68,7 @@ Factor3 = np.log(np.array(data['Volume'][5:])) - np.log(np.array(data['Volume'][
 
 After that, we begin our assessment in `HMM_arbitrage.py`
 
-<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/HMM_Status.png" height="330" align=center>
+<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/HMM_status.png" height="330" align=center>
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/Status_Judgement.png" height="330" align=center>
 
 
