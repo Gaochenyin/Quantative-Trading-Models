@@ -23,7 +23,7 @@ Meantime, we have implemented various statistical arbitrage model including
 
 Trading results from 05/2017 to 07/2017 on *RB1805*
 
-<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Strategy/Partial%20Results.png" height="600" align=center>
+<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Strategy/Partial%20Results.png" height="800" align=center>
 
 see `backtesting_strategyIntraVolMeanRev.ipynb` for more details
 
@@ -68,7 +68,7 @@ Factor3 = np.log(np.array(data['Volume'][5:])) - np.log(np.array(data['Volume'][
 
 After that, we begin our assessment in `HMM_arbitrage.py`
 
-<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/HMM_status.png" height="330" align=center>
+<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/HMM_Status.png" height="330" align=center>
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/Status_Judgement.png" height="330" align=center>
 
 
