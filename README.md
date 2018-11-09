@@ -68,7 +68,7 @@ Factor3 = np.log(np.array(data['Volume'][5:])) - np.log(np.array(data['Volume'][
 
 After that, we begin our assessment in `HMM_arbitrage.py`
 
-<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/HMM_Status.png" height="330" align=center>
+<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/HMM_status.png" height="330" align=center>
 <img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/HMM/Status_Judgement.png" height="330" align=center>
 
 
@@ -101,7 +101,7 @@ Finally, we demonstrate our trading return based on previous HMM prediction
 
 we run our Cross-Star strategy on *Pb* Dominant contract from 2018/05/05 to 2018/11/10. For more details in `Integrate_Pb.ipynb`
 
-<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/Cross_Star/Pb_Return.png" height="330">
+<img src="https://github.com/Gaochenyin/Quantative-Trading-Models/blob/master/Model/Cross_Star/Pb/TradingResults/Pb_Return.png" height="330">
 
 ## Set up
 + [***vnpy***](https://github.com/vnpy/vnpy)(vnpy-1.8)
