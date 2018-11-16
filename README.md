@@ -1,4 +1,8 @@
-# Quantative-Trading-Models
+# Quantative-Trading-Models 
+![vnpy](https://img.shields.io/badge/vnpy-1.8.1-orange.svg)
+![Python 3x](https://img.shields.io/badge/python-3.x-blue.svg)
+![hmm](https://img.shields.io/badge/hmm-0.0.1.dist--info-green.svg)
+
 
 These are trading results and arbitrage models from Southern China Center for Statistical Science (SC2S2), Sun Yat-sen University
 
@@ -10,6 +14,9 @@ We have completed designed the algorithm of **intraday volatile mean reversion s
 See `strategyIntraVolMeanRev.py` for more details trading algorithm.
 
 Meantime, we have implemented various statistical arbitrage model including
+
+
+
 
 1. **Cross-star Arbitrage**
 2. **Hidden Markov Model** based on Factors Decomposition
@@ -112,3 +119,4 @@ we run our Cross-Star strategy on *Pb* Dominant contract from 2018/05/05 to 2018
 
 ## Contact
 + gaochy5@mail2.sysu.edu.cn
+![license](https://img.shields.io/packagist/l/doctrine/orm.svg)
