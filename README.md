@@ -1,8 +1,8 @@
 # Quantative-Trading-Models 
+![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg)
 ![vnpy](https://img.shields.io/badge/vnpy-1.8.1-orange.svg)
-![Python 3x](https://img.shields.io/badge/python-3.x-blue.svg)
 ![hmm](https://img.shields.io/badge/hmm-0.0.1.dist--info-green.svg)
-
+![statsmodels](https://img.shields.io/badge/statsmodels-0.8.0--py3.6.egg--info-yellow.svg)
 
 These are trading results and arbitrage models from Southern China Center for Statistical Science (SC2S2), Sun Yat-sen University
 
